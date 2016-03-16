@@ -7,7 +7,7 @@
 //system Libraries
 #include <iostream>
 
-//using namespace std;
+using namespace std;
 
 //User Libraries
   
@@ -29,7 +29,7 @@ int main(int argc, char** argv) {
     //Map the Inputs to the outputs 
     
     //Output the results 
-    std::cout<<"Hello World"<<std::endl;
+    cout<<"Hello World"<<endl;
     
     //exit Stage Right! 
     return 0;
