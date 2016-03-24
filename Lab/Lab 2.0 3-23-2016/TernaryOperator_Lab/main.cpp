@@ -14,34 +14,24 @@ using namespace std;
  */
 int main(int argc, char** argv) {
 
-    bool A, B, C, D, F;
-    int score;
-    
-    A = true;
-    B = true;
-    C = true;
-    D = true;
-    F = true; 
-    
-    
+   int score;
+   char grade;
+   
     cout << "Enter your score you got from 0 to 100." << endl;
     
     cin >> score ;
+       
+    (score <= 100 && score >= 90 ? grade = 'A': 'F');
     
-    cout << "You letter grade is: " << 
+    (score <= 89 && score >= 80 ? grade = 'B': 'F');
     
+    (score <=  79 && score >= 70 ? grade = 'C': 'F');
     
+    (score <=  69 && score >= 60 ? grade = 'D': 'F');
     
+    (score <=  59 ? grade = 'F': 'F');
     
-    
-    
-    
-    
-    
-    
-    
-    
+    cout << "Your grade is: " << grade << endl;
     
     return 0;
 }
-

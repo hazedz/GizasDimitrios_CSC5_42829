@@ -22,15 +22,7 @@ int main(int argc, char** argv) {
     
     switch (score <= 100 && score >= 90){
         case true: cout << "Your letter grade is: A" << endl;break;
-        case false:  switch (score <= 89 && score >= 80){
-        case true: cout << "Your letter grade is: B" << endl;break;
-        case false:  switch (score <= 79 && score >= 70){
-        case true: cout << "Your letter grade is: B" << endl;break;
-        case false:  switch (score <= 69 && score >= 60){
-        case true: cout << "Your letter grade is: B" << endl;break;
-        case false:  switch (score <= 59 && score >= 0){
-        case true: cout << "Your letter grade is: B" << endl;break;
-    }
+    }    
     
    switch (score <= 89 && score >= 80){
         case true: cout << "Your letter grade is: B" << endl;
