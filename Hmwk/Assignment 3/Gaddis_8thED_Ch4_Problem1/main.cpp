@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Dimitrios Gizas
  * Created on March 28, 2016, 10:15 AM
- * Purpose: 
+ * Purpose: Minimum/Maximum
  */
 
 #include <iostream>
