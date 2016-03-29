@@ -14,16 +14,17 @@ using namespace std;
  */
 int main(int argc, char** argv) {
 
-    
+    //Declare variables    
     int num1;
     
-    
+    //User input
     cout << "Enter a number between 1 and 10 to convert it into Roman Numeral" 
             << endl;
     cin >> num1;
     
     cout << "The Roman numeral form of the number " << num1 << " is " << endl;
     
+    //Output
     switch (num1) {
     
         case 1 : cout << "I" << endl;
