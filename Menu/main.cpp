@@ -21,8 +21,9 @@ using namespace std;
 
 //Execution Begins Here
 int main(int argc, char** argv) {
+
     //Declare the loop variable
-    int choice;
+    char choice;
     //General Menu Format
     do{
         //Display the selection
@@ -31,36 +32,36 @@ int main(int argc, char** argv) {
         cout<<"Type 3 to solve problem 3"<<endl;
         cout<<"Type anything else to quit with no solutions."<<endl;
         //Read the choice
-        
         cin>>choice;
         //Solve a problem that has been chosen.
         switch(choice){
-                case 1:{//Character '1' in Decimal
+                case 49:{//Character '1' in Decimal
                     int sum=1+2+3+4+5+6+7+8+9+10;
                     cout<<endl;
                     cout<<"Solution to 1 sum(1->10)="<<sum<<endl;
                     cout<<endl;
                     break;
                 }
-                case 02:{//Character '2' in Octal
+                case 062:{//Character '2' in Octal
                     int prod=1*2*3*4*5*6*7*8*9*10;
                     cout<<endl;
                     cout<<"Solution n!(1->10)="<<prod<<endl;
                     cout<<endl;
                     break;
                 }
-                case 3:{//Character '3' in Hex
+                case 0x33:{//Character '3' in Hex
                     float quot=1.0f/2/3/4/5/6/7/8/9/10;
                     cout<<endl;
                     cout<<"Solution to 3 quot(1->10)="<<quot<<endl;
                     cout<<endl;
                     break;
                 }
-                
                 default:{
                         cout<<"Exit?"<<endl;
                 }
         };
-    }while(choice <= 10  );   
+    }while(choice<='9');
+    
+    //Exit stage right
     return 0;
 }
