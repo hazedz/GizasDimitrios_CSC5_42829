@@ -1,0 +1,5 @@
+To make it not a  loop ethier comment it out or delete it and just have the //output input changed to: 
+unsigned short number ;
+    cin >> number;
+    cout << "Convert " << number << " to Roman Numerals" << endl;
+    cout << number << " = ";
