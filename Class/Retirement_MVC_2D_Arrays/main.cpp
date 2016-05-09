@@ -29,7 +29,7 @@ int main(int argc, char** argv) {
     float pv = 0.0f;      //present value
     float iRate = 0.05f;  //interest rate from municipal bond investments 
     const int SIZE = 1000;// SIZE of the array
-    float fv[SIZE][COLMAX] = {};
+    float fv[SIZE][COLMAX] = {{},{}};
           fv[0][1] = pv;  
           fv[0][0] = pv;  
     float yrlyDep;        //Yearly Deposit in $'s 
