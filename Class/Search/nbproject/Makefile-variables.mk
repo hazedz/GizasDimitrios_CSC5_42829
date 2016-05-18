@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
-CND_ARTIFACT_NAME_Debug=craps_v2_arrays
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/craps_v2_arrays
+CND_ARTIFACT_NAME_Debug=search
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/search
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
-CND_PACKAGE_NAME_Debug=crapsv2arrays.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/crapsv2arrays.tar
+CND_PACKAGE_NAME_Debug=search.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/search.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
-CND_ARTIFACT_NAME_Release=craps_v2_arrays
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/craps_v2_arrays
+CND_ARTIFACT_NAME_Release=search
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/search
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
-CND_PACKAGE_NAME_Release=crapsv2arrays.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/crapsv2arrays.tar
+CND_PACKAGE_NAME_Release=search.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/search.tar
 #
 # include compiler specific variables
 #

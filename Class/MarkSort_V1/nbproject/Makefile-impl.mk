@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Craps_V2_Arrays
+PROJECTNAME=MarkSort_V1
 
 # Active Configuration
 DEFAULTCONF=Debug

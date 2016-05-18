@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Craps_V2_Arrays
+PROJECTNAME=Search
 
 # Active Configuration
 DEFAULTCONF=Debug

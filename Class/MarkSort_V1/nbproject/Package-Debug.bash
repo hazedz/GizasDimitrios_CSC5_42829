@@ -13,9 +13,9 @@ CND_BUILDDIR=build
 CND_DLIB_EXT=dll
 NBTMPDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/craps_v2_arrays
-OUTPUT_BASENAME=craps_v2_arrays
-PACKAGE_TOP_DIR=crapsv2arrays/
+OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/marksort_v1
+OUTPUT_BASENAME=marksort_v1
+PACKAGE_TOP_DIR=marksortv1/
 
 # Functions
 function checkReturnCode
@@ -60,15 +60,15 @@ mkdir -p ${NBTMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory "${NBTMPDIR}/crapsv2arrays/bin"
+makeDirectory "${NBTMPDIR}/marksortv1/bin"
 copyFileToTmpDir "${OUTPUT_PATH}.exe" "${NBTMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}.exe" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/crapsv2arrays.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/marksortv1.tar
 cd ${NBTMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/crapsv2arrays.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/marksortv1.tar *
 checkReturnCode
 
 # Cleanup
