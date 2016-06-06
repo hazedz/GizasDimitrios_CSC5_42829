@@ -111,11 +111,13 @@ void boss (int healthB) {
     cout << "Or type in 4 to pick the Mage class or 5 to pick the Knight class." << endl;       
 } 
 void BossBM (int BattleHP, int healthM, int d8, int md8, int healthB, const int SIZE, int array[]){
+    
     //Declare Variables
     char start;
     int damageB;
     BattleHP = healthM;
-   //Stating and Asking if you want to start
+   
+    //Stating and Asking if you want to start
     cout << "You selected the Mage Class and the battle now begins." << endl;
     cout << "BOSS: Index Gunyr" << endl;
     cout << "Heath: " << healthB << endl;
@@ -129,38 +131,28 @@ void BossBM (int BattleHP, int healthM, int d8, int md8, int healthB, const int 
     while(healthB > 0 && BattleHP > 0){
     srand(static_cast<unsigned int>(time(0)));
     d8 = rand()%8+1;
-    md8 = rand()%8+1;
-    
+    md8 = rand()%8+1; 
     cout << "Press x to roll to attack." << endl;
     cin >> start;
-    
-    
+      
     if (d8 <= 2){
-       
-    
      cout << "You Miss your attack " << endl;
     }
-
              else if (d8 <= 4){
                  damageB = array[3]*3;
                  healthB = healthB - damageB;
              cout << "You did " << damageB <<  endl;
              }
-
              else if (d8 <= 6){
                  damageB = array[4]*3;
                  healthB = healthB - damageB;
              cout << "You did " << damageB << endl;
              }
-
              else if (d8 <= 8){
                  damageB = array[5]*3;
                  healthB = healthB - damageB;
              cout << "You did " << damageB << endl;
-             }
- 
-
-    
+             }   
     cout << healthB << " Boss HP" << endl;
     cout << BattleHP << " Your HP" << endl;
     
@@ -174,13 +166,9 @@ void BossBM (int BattleHP, int healthM, int d8, int md8, int healthB, const int 
         }
     
     cout << "Press x to roll for the bosses attack." << endl;
-    cin >> start;
-    
-    
-    if (md8 <= 2){
-       
-    
-     cout << "The boss missed his attack " << endl;
+    cin >> start;    
+    if (md8 <= 2){      
+         cout << "The boss missed his attack " << endl;
     }
 
              else if (md8 <= 4){
@@ -188,21 +176,16 @@ void BossBM (int BattleHP, int healthM, int d8, int md8, int healthB, const int 
                  BattleHP = BattleHP - damageB;
              cout << "He did " << damageB <<  endl;
              }
-
              else if (md8 <= 6){
                  damageB = array[10]*3;
                  BattleHP = BattleHP - damageB;
              cout << "He did " << damageB << endl;
              }
-
              else if (md8 <= 8){
                  damageB = array[11]*3;
                  BattleHP = BattleHP - damageB;
              cout << "He did " << damageB << endl;
-             }
- 
-
-    
+             }   
     cout << healthB << " Boss HP" << endl;
     cout << BattleHP << " Your HP" << endl;
     
@@ -213,18 +196,18 @@ void BossBM (int BattleHP, int healthM, int d8, int md8, int healthB, const int 
         else if (BattleHP <= 0){
             cout << "You lost game over." << endl;
             return;
-        }
-    
-    
+        }       
     }
 }
 
 void BossBK (int BattleHP, int healthK, int d8, int md8, int healthB, const int SIZE, int array[]){
+    
     //Declare Variables
     char start;
     int damageB;
     BattleHP = healthK;
-   //Stating and Asking if you want to start
+  
+    //Stating and Asking if you want to start
     cout << "You selected the Mage Class and the battle now begins." << endl;
     cout << "BOSS: Index Gunyr" << endl;
     cout << "Heath: " << healthB << endl;
@@ -238,38 +221,28 @@ void BossBK (int BattleHP, int healthK, int d8, int md8, int healthB, const int 
     while(healthB > 0 && BattleHP > 0){
     srand(static_cast<unsigned int>(time(0)));
     d8 = rand()%8+1;
-    md8 = rand()%8+1;
-    
+    md8 = rand()%8+1;    
     cout << "Press x to roll to attack." << endl;
     cin >> start;
-    
-    
-    if (d8 <= 2){
        
-    
+    if (d8 <= 2){           
      cout << "You Miss your attack " << endl;
     }
-
              else if (d8 <= 4){
                  damageB = array[0]*3;
                  healthB = healthB - damageB;
              cout << "You did " << damageB <<  endl;
              }
-
              else if (d8 <= 6){
                  damageB = array[1]*3;
                  healthB = healthB - damageB;
              cout << "You did " << damageB << endl;
              }
-
              else if (d8 <= 8){
                  damageB = array[2]*3;
                  healthB = healthB - damageB;
              cout << "You did " << damageB << endl;
-             }
- 
-
-    
+             }   
     cout << healthB << " Boss HP" << endl;
     cout << BattleHP << " Your HP" << endl;
     
@@ -284,34 +257,25 @@ void BossBK (int BattleHP, int healthK, int d8, int md8, int healthB, const int 
     
     cout << "Press x to roll for the bosses attack." << endl;
     cin >> start;
-    
-    
-    if (md8 <= 2){
        
-    
+    if (md8 <= 2){           
      cout << "The boss missed his attack " << endl;
     }
-
              else if (md8 <= 4){
                  damageB = array[6]*3;
                  BattleHP = BattleHP - damageB;
              cout << "He did " << damageB <<  endl;
              }
-
              else if (md8 <= 6){
                  damageB = array[7]*3;
                  BattleHP = BattleHP - damageB;
              cout << "He did " << damageB << endl;
              }
-
              else if (md8 <= 8){
                  damageB = array[8]*3;
                  BattleHP = BattleHP - damageB;
              cout << "He did " << damageB << endl;
-             }
- 
-
-    
+             }    
     cout << healthB << " Boss HP" << endl;
     cout << BattleHP << " Your HP" << endl;
     
@@ -322,8 +286,6 @@ void BossBK (int BattleHP, int healthK, int d8, int md8, int healthB, const int 
         else if (BattleHP <= 0){
             cout << "You lost game over." << endl;
             return;
-        }
-    
-    
+        }        
     }
 }
