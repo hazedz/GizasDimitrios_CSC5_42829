@@ -71,35 +71,44 @@ int main(int argc, char** argv) {
 }
 void mage (int healthM){
 
+    cout << "" << endl;
     cout << "The Mage Class uses magic damage to the boss" << endl;
-    cout << "When attacking the boss you deal 3 forms of damage " << endl;
-    cout << "Light: 91" <<endl;
-    cout << "Medium: 111" <<endl;
-    cout << "Heavy: 143" <<endl;
+    cout << "When attacking the boss you deal 3 forms of spell damage " << endl;
+    cout << "Light: 73" <<endl;
+    cout << "Medium: 98" <<endl;
+    cout << "Heavy: 164" <<endl;
     cout << "And each attack is multiplied by 3" << endl;
     cout << "The Mage's max stats are: " << endl;
     cout << "Health: " << healthM << endl;
+    cout << "Now type in 2 to see Knight class or 3 to see the Boss' stats" << endl;
+    cout << "Or if you want to pick this class type in 4" << endl;   
     return ;
 }
 void knight (int healthK) {
 
+    cout << "" << endl;
     cout << "The Knight class use a sword" << endl;
     cout << "When attacking the boss you deal 3 forms of damage " << endl;
-    cout << "Light: 73" <<endl;
-    cout << "Medium: 98" <<endl;
-    cout << "Heavy: 164" <<endl;
+    cout << "Light: 91" <<endl;
+    cout << "Medium: 111" <<endl;
+    cout << "Heavy: 143" <<endl;
     cout << "And each attack is multiplied by 3" <<endl;
     cout << "The Knight's max stats are: " << endl;
     cout << "Health: " << healthK << endl;
+    cout << "Now type in 1 to see Mage class or 3 to see the Boss' stats" << endl;
+    cout << "Or if you want to pick this class type in 5" << endl;        
 
 }
 
 void boss (int healthB) {
     
+    cout << "" << endl;
     cout << "The boss you will be face is named Iudex Gundyr" << endl;
     cout << "The boss uses a sword to attack to attack. " << endl;
     cout << "Depending on what class you choose he deals a certain amount of damage in forms of 3 attacks." << endl;
-    cout << "The bosses max health is: " << healthB << endl; 
+    cout << "The bosses max health is: " << healthB << endl;
+    cout << "Now either type in 1 to see Mage class or 2 to see Knight class." << endl;
+    cout << "Or type in 4 to pick the Mage class or 5 to pick the Knight class." << endl;       
 } 
 void BossBM (int BattleHP, int healthM, int d8, int md8, int healthB, const int SIZE, int array[]){
     //Declare Variables
@@ -177,19 +186,19 @@ void BossBM (int BattleHP, int healthM, int d8, int md8, int healthB, const int 
              else if (md8 <= 4){
                  damageB = array[9]*3;
                  BattleHP = BattleHP - damageB;
-             cout << "You did " << damageB <<  endl;
+             cout << "He did " << damageB <<  endl;
              }
 
              else if (md8 <= 6){
                  damageB = array[10]*3;
                  BattleHP = BattleHP - damageB;
-             cout << "You did " << damageB << endl;
+             cout << "He did " << damageB << endl;
              }
 
              else if (md8 <= 8){
                  damageB = array[11]*3;
                  BattleHP = BattleHP - damageB;
-             cout << "You did " << damageB << endl;
+             cout << "He did " << damageB << endl;
              }
  
 
